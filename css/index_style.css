@@ -1,0 +1,308 @@
+@charset "utf-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@1,500&display=swap');
+h1,h2,h3,h4,h5,h6{margin: 0;padding: 0}
+
+body{margin: 0; padding:0; font-family: 'Lora', serif;scroll-behavior: smooth}
+
+.h1{ font-family:serif; text-align:center; }
+
+.h3{color:#000000cf;  letter-spacing:1px; margin-top:7%; font-size:25px}
+.h3{border-bottom:1px solid #000000cf; width:300px; height:50px}
+@media only screen and (max-width:7680px) and (min-width:360){
+	.h3{font-size:18px}
+	.h3{border-bottom:1px solid #000000cf; width:100px !important; height:50px}
+}
+
+h6{text-align:center; padding:5px; font-size:20px; color:#000000cf;}
+h5 a{text-decoration:none !important; color:#000;}
+h5 a:hover{color:#b6907e}
+
+
+
+ .clr{clear:both}
+
+
+
+	/* nav start */
+ 
+
+ 
+.navbar-brand img{width:150px}
+.navbar .navbar-nav .nav-link {
+    color:#000; font-size:18px; transition:0.5s; letter-spacing:2px; font-weight:500;}
+	
+	.navbar .navbar-nav .nav-link{ position:relative; transition:.5s; }
+	
+	 .navbar-nav .nav-item .nav-link:before,.nav-link:after{ content:''; position:absolute; width:0; height:2px; color: #b6907e;background:#b6907e;opacity:0; transition:.5s}
+	
+	 .nav-link:before{top:0; left:0}
+	  .nav-link:after{right:0; bottom:0}
+  .nav-link:hover:before,.nav-link:hover:after{opacity:1; width:100%; transition:.5s; color:#b6907e}
+
+.navbar-toggler-icon .fa .fa-bars{color:#F30}
+
+@media only screen and (max-width:992px)
+	
+{
+	
+		.navbar-nav .nav-item
+{
+
+	text-align:center !important
+}
+	.navbar-light .navbar-nav .nav-link:hover
+{
+	color: #b6907e!important;
+	
+	
+
+	background:none;
+	border-radius:0;
+	
+
+}
+
+}
+.list-inline-item .fa{ cursor:pointer}
+
+	/* nav end */
+
+
+
+
+
+
+
+
+
+	/* banner start */
+	h1{ position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);}
+h1 { color:#fff; font-size:60px; letter-spacing:5px}
+@media only screen and (max-width:768px) {
+	h1{color:#fff; font-size:30px; letter-spacing:3px}
+}
+
+
+.sec-banner{ background:url(../image/banner/time-3091031_1920.jpg) no-repeat fixed center; width:100%; padding:300px 0;; background-size:cover; position:relative; }
+.overlay1{background:#000000d1; width:100%; height:100%; position:absolute; top:0; left:0; z-index:1; background-size:contain;}
+
+.button{ position:absolute; top:68%; left:50%; transform:translate(-50%,-50%);}
+
+.button .btn2 a {color:#fff; border:2px solid #fff; padding:15px 20px; background:transparent; font-size:18px; letter-spacing:1px; cursor:pointer; box-shadow:inset 0 0 0 0 #fff; transition:0.8s all; margin:auto; display:table; border-radius:5px; font-weight:600;margin-top:2%; text-decoration:none;  }
+
+@media only screen and (max-width:768px) {
+	
+	.button .btn2 a{font-size:12px !important;
+	 padding:10px 15px;}
+}
+	
+.button .btn2 a:hover{box-shadow: inset 400px 0 0 0 #b6907e; color:#fff; border:2px solid #b6907e}
+
+/* banner end */
+
+
+
+/* populer items*/
+.p-product img{width:100%; padding:12px; 
+    vertical-align: middle;
+    border-style: none;}
+	@media only screen and (max-width:768px){
+		.p-product img{width:80%; margin-left:8%}
+	}
+.product-bottom .fa{ color:#000000cf !important; font-size:15px;}
+.product-bottom h4{color:#000000cf; font-weight:500; font-size:28px; letter-spacing:2px}
+.product-bottom h5{ font-size:20px; padding-bottom:10px;color:#000000cf}
+
+.overlay{display:block; opacity:0; top:12%; margin-left:0; width:18%; position:absolute}
+@media only screen and (max-width:768px){
+	.overlay{ top:14%; width:25%}
+}
+.p-product:hover .overlay{opacity:1; margin-left:5%; transition:.05s} 
+
+.btn{ font-size:15px; background:#000; padding:6px 8px; border-radius:12px; color:#000; margin:auto; display:table}
+.btn:hover{background:#000; color:#fff}
+
+
+.overlay .fa{ cursor:pointer; background:#b6907e; color:#000; height:19px; width:20px; font:15px; padding:3px; margin-bottom:5%; margin:5%;}
+.overlay .btn-secondary{ background:#00000078; border:none; box-shadow:none;padding: 5px;    margin-top: 5px;}
+
+/* populer items*/
+
+
+
+
+/* watch choice*/
+.watch-area{ margin-top:5%}
+.choice-watch-img img{width:100%;box-shadow:20px 10px 20px }
+@media only screen and (max-width:768px){
+	.choice-watch-img img{width:100%;  }
+}
+
+.watch-details p {
+    margin-bottom: 1rem;
+    color: #000000cf;
+    font-size: 20px;}
+	
+.watch-details h2{color:#000000cf; font-size:30px; letter-spacing:2px; border-bottom:1px solid  #000000cf; width:300px; height:50px}
+
+.btn1{color:#000; border:2px solid #000000cf; padding:12px 15px; background:transparent; font-size:16px; letter-spacing:1px; cursor:pointer; box-shadow:inset 0 0 0 0 #fff; transition:0.8s all; margin:auto; display:table; border-radius:5px; font-weight:600}
+.inside:hover{box-shadow: inset 0 0 0 50px #b6907e; color:#fff; border:2px solid #b6907e}
+
+/* watch choice*/
+
+
+
+/*
+.quit-banner{background:url(../image/banner/quetbanner.jpg) no-repeat ; background-size:100%; background-size:cover; width:100%; background-size:contain}
+.quit-banner img{width:206px; margin-top:15px}
+*/
+
+
+
+/* writing banner overlay*/
+.inner-banner{background:url(../image/banner/inner-banner.png) no-repeat fixed center; background-size:100%; background-size:cover; width:100%; height:300px; position:relative; padding:20px}
+.d-block{ color:#fff;}
+.carousel{margin-top:9%}
+@media only screen and (max-width:992px) {
+	.sec-banner{ width:100%; height:200px}
+}
+@media only screen and (max-width:480px) and (min-width:320){
+	.sec-banner{ width:100%; height:200px}
+}
+/* writing banner overlay*/
+
+
+
+
+
+
+
+/* latest product*/
+
+.upcoming img{width:100%; padding:10px}
+.upcoming  h4{color:#000000cf; font-weight:500; font-size:20px; letter-spacing:2px; text-align:center;margin-top: 18px;}
+.upcoming h5{ font-size:20px; padding-bottom:10px;color:#000000cf; text-align:center; }
+
+.logos{background:#000000cf}
+.logos img{width:100%; padding:10px; margin-top:5%;backgroung:#b6907e}
+
+/* latest product*/
+
+
+
+
+
+
+
+
+
+
+/* shiiping details*/
+.policy{ width:350px; box-sizing:border-box; color:#000000cf}
+@media only screen and (max-width:992px) and (min-width:768px){
+	.policy{width:100%}
+}
+@media only screen and (max-width:768px) and (min-width:480px){
+	.policy{width:100%}
+}
+	
+.policy p{ font-size:16px; font-weight:500 }
+@media only screen and (max-width:992) {
+	.policy p{ text-align:center !important; font-size:15px;}
+
+}
+
+.policy1{ width:300px; box-sizing:border-box; padding:5px}
+
+/* shiiping details*/
+
+
+
+
+	/* Footer */
+section .section-title {
+    text-align: center;
+    color: #007b5e;
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+#footer {
+	padding: 60px 0;
+    background: #000000cf;
+	margin-top:15px
+	
+}
+#footer h5{
+	padding-left: 10px;
+    border-left: 3px solid #fff;
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color:#fff;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none !important;
+     
+ 
+}
+
+.social-menu ul{ margin:auto; display:table;  }
+@media (max-width:480px) {
+	.social-menu ul{padding:0; margin-bottom:0}
+}
+	
+.social-menu ul li{display:inline-block; list-style-type:none; margin:0 10px; }
+.social-menu ul li .fa{ font-size:20px; color:#000; line-height:40px; transition:0.6s; }
+.social-menu ul li .fa:hover{color:#fff}
+.social-menu ul li a{ width:40px; height:40px; border-radius:50%; display:block; background-color:#fff;text-align:center; transition:0.6s; box-shadow:0 5px 4px rgba(0,0,0,.5)}
+.social-menu ul li a:hover{transform:translate(0,-15px)}
+.social-menu ul li:nth-child(1) a:hover{ background-color:#3b5999}
+.social-menu ul li:nth-child(2) a:hover{ background-color:#e4405f}
+.social-menu ul li:nth-child(3) a:hover{ background-color:#55acee}
+.social-menu ul li:nth-child(4) a:hover{ background-color:#25D366}
+.social-menu ul li:nth-child(5) a:hover{ background-color:#dd4b39}
+
+
+#footer ul.quick-links li{
+	padding: 3px 0;
+	-webkit-transition: .5s all ease;
+	-moz-transition: .5s all ease;
+	transition: .5s all ease;
+}
+#footer ul.quick-links li:hover{
+	padding: 3px 0;
+	margin-left:5px;
+	font-weight:700;
+	
+	
+}
+#footer ul.quick-links li a i{
+	margin-right: 5px;
+	font-size:18px
+}
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+	
+}
+
+@media (max-width:992px) {
+	#footer h5 {
+    padding-left: 0;
+    border-left: transparent;
+    padding-bottom: 0px;
+    margin-bottom: 10px;
+	text-align:center
+}
+}
+
+@media (max-width:992px){
+#footer ul.quick-links li{text-align:center}
+}
+
+@media (max-width:768px){
+	#footer{margin-top:0px !important}
+/* Footer end */
+	
+	
